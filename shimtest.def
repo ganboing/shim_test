@@ -1,0 +1,4 @@
+LIBRARY   SHIMTEST
+EXPORTS
+   GetHookAPIs = _GetHookAPIs@12
+   NotifyShims = _NotifyShims@8
