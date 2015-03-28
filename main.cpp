@@ -96,7 +96,7 @@ LONG CALLBACK EntryPointResponder(
 	_In_  PEXCEPTION_POINTERS ExceptionInfo
 	);
 
-int RedirectedEntryPoint(){
+int WINAPI RedirectedEntryPoint(void){
 	RemoveVectoredExceptionHandler(EntryPointResponder);
 	auto len = GetEnvironmentVariableW(ENV_NAME, DllInfoString, _countof(DllInfoString));
 	auto pstr_current = DllInfoString;
